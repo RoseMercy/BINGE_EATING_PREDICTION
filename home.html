@@ -1,0 +1,22 @@
+<html>
+    <body bgcolor= >
+       <center>
+         <h1>BINGE EATING</h1>
+         <form action="{{ url_for('predict')}}"method="post">
+          BMI<br><input type="text" name="BMI" placeholder="ENTER BMI" required="required" /><br>
+          CALORIE<br><input type="text" name="calories" placeholder="Calories Taken" required="required" /><br>
+          CALORIES BURNT<br><input type="text" name="calories_burnt" placeholder="Calories Burnt" required="required" /><br>
+          STRESS LEVEL<br><input type="text" name="	Stress Levels" placeholder="Stress Level" required="required" /><br>
+          <button type="submit" >Predict</button>
+         </form>
+        
+            </center>
+            
+
+
+{{prediction_text}}
+
+</body>
+
+
+</html>
